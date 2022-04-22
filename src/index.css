@@ -1,8 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Open+Sans&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap');
 
 :root {
-  --font-base: "Cormorant Garamond", serif;
-  --font-alt: "Open Sans", sans-serif;
+  --font-base: "Press Start 2P", cursive;
+  --font-alt: "VT323", monospace;
 
   --color-golden: #dcca87;
   --color-black: #0c0c0c;

@@ -3,8 +3,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { useState, useEffect } from "react";
 
 import Loading from "./components/Loading/Loading";
-import Navbar from "./components/Navbar/Navbar";
-import Subheading from "./components/Subheading/Subheading"
+import Landing from "./components/Landing/Landing";
+// import Navbar from "./components/Navbar/Navbar";
+// import Subheading from "./components/Subheading/Subheading"
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -15,8 +16,7 @@ function App() {
 
   return (
     <>
-      {loading === false ? <Navbar /> : <Loading />}
-      <Subheading />
+      {loading === false ? <Landing /> : <Loading />}
     </>
   )
 }
