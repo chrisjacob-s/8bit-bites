@@ -1,5 +1,16 @@
-.image {
-    background-image: url("../../img/8bit-cafe.gif");
-    height: 100vh;
+header {
+    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url("../../img/8bit-bar.gif");
     background-size: cover;
+    height: 100vh;
+}
+
+.app__header-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.app__header-logo img {
+    width: 250px;
 }

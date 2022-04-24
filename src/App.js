@@ -7,7 +7,7 @@ import Landing from "./components/Landing/Landing";
 // import Navbar from "./components/Navbar/Navbar";
 // import Subheading from "./components/Subheading/Subheading"
 
-function App() {
+export default function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -20,5 +20,3 @@ function App() {
     </>
   )
 }
-
-export default App;
