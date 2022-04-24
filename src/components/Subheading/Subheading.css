@@ -1,10 +1,12 @@
 header {
+    /* darkened background image */
     background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url("../../img/8bit-bar.gif");
     background-size: cover;
     height: 100vh;
 }
 
 .app__header-logo {
+    /* centers logo */
     position: absolute;
     top: 50%;
     left: 50%;

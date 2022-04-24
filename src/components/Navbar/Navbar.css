@@ -13,7 +13,6 @@ a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* background: var(--color-black); */
   padding: 1rem 2rem;
 }
 
@@ -28,7 +27,6 @@ a:hover {
 }
 
 .app__navbar-links {
-  /* flex: 1; */
   margin: 0;
   display: flex;
   justify-content: center;
