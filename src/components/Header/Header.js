@@ -1,7 +1,5 @@
 import "./Header.css";
 
-import Navbar from "../Navbar/Navbar";
-
 import mario from "../../img/8bit-rotating-mario.gif";
 
 export default function Header() {

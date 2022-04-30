@@ -6,7 +6,7 @@ import loading from "../../img/8bit-loading.gif";
 export default function Loading() {
   return (
     <>
-      <body style={{ background: "black" }} >
+      <section>
         <div className="container">
           <div>
             <img className="loading" src={loading} alt="8bit-loading" />
@@ -15,7 +15,7 @@ export default function Loading() {
             <img className="mario" src={mario} alt="8bit-mario" />
           </div>
         </div>
-      </body>
+      </section>
     </>
   );
 }
