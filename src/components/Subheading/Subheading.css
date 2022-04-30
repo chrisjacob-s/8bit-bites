@@ -1,18 +1,10 @@
-header {
-    /* darkened background image */
-    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url("../../img/8bit-bar.gif");
-    background-size: cover;
-    height: 100vh;
+.app__title {
+    font-family: var(--font-base);
+    color: var(--color-golden);
 }
 
-.app__header-logo {
-    /* centers logo */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.app__header-logo img {
-    width: 250px;
+.app__subtitle {
+    font-family: var(--font-base);
+    color: var(--color-black);
+    
 }

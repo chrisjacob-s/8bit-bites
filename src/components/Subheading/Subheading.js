@@ -1,19 +1,10 @@
 import "./Subheading.css";
 
-import Navbar from "../Navbar/Navbar";
-
-import mario from "../../img/8bit-rotating-mario.gif";
-
-export default function Subheading() {
+export default function Subheading({ title, subtitle }) {
   return (
     <>
-      <header>
-        <Navbar />
-
-        <div className="app__header-logo">
-          <img src={mario} alt="8bit-mario"></img>
-        </div>
-      </header>
+      <h2 className="app__title">{title}</h2>
+      <h4 className="app__subtitle">{subtitle}</h4>
     </>
   );
 }

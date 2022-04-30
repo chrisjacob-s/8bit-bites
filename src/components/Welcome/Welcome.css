@@ -1,0 +1,29 @@
+h4 {
+    padding: 10px 0px;
+}
+
+.app__welcome-section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 100px;
+  position: relative;
+}
+
+.app__welcome-subheading {
+  display: flex;
+  flex-direction: column;
+}
+
+.app__welcome-subheading p {
+    width: 50vw;
+}
+
+.app__welcome-beer img{
+    width: 150px;
+}
+
+.app__address {
+  font-family: var(--font-alt);
+  font-size: 32px;
+}
