@@ -7,7 +7,7 @@ h1 {
   padding-bottom: 50px;
 }
 
-section {
+.loading__background {
   background-color: var(--color-black);
 }
 

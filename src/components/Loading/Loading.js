@@ -6,7 +6,7 @@ import loading from "../../img/8bit-loading.gif";
 export default function Loading() {
   return (
     <>
-      <section>
+      <section className="loading__background">
         <div className="container">
           <div>
             <img className="loading" src={loading} alt="8bit-loading" />
