@@ -6,8 +6,8 @@ h4 {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  margin: 100px;
   position: relative;
+  margin-top: -50px; /* adjusts effects from positioning Header */
 }
 
 .app__welcome-subheading {
