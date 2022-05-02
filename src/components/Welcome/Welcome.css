@@ -17,6 +17,8 @@ h4 {
 
 .app__welcome-subheading p {
     width: 50vw;
+    line-height: 30px;
+    /* font-size: 1rem; */
 }
 
 .app__welcome-beer img{
@@ -26,4 +28,14 @@ h4 {
 .app__address {
   font-family: var(--font-alt);
   font-size: 32px;
+}
+
+@media screen and (max-width: 800px) {
+  .app__welcome-section {
+    flex-direction: column;
+  }
+
+  .app__welcome-beer img {
+    margin-bottom: 100px;
+  }
 }

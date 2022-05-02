@@ -25,8 +25,8 @@ export default function Navbar() {
     <>
       {/* if backgroundChange is true then set the nav class to app__navbar and change, else just app__navbar */}
       {/* meaning app__navbar will only have black background when the window scroll exceeds 80 */}
-      <nav className={backgroundChange ? "app__navbar change slide-bottom" : "app__navbar"}>
-        <div className="app__navbar-logo">
+      <nav className={backgroundChange ? "app__navbar app__navbar-change slide-bottom" : "app__navbar"}>
+        <div className={backgroundChange ? "app__navbar-logo app__navbar-shrink-image" : "app__navbar-logo"}>
           <img src={mario} alt="mario" />
         </div>
         <ul className="app__navbar-links">

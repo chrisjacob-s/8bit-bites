@@ -14,8 +14,12 @@ a {
   z-index: 10;
 }
 
-.change {
-  background-color: black;
+.app__navbar-change {
+  background-color: var(--color-black);
+}
+
+.app__navbar-shrink-image {
+  animation: shrink 275ms ease-in-out forwards;
 }
 
 .app_navbar-logo {
@@ -67,11 +71,6 @@ a {
   transform: scaleX(1);
 }
 
-/* hover colors links gray */
-/* .app__navbar-links li a:hover {
-  color: var(--color-gray);
-} */
-
 .app__navbar-smallscreen {
   display: none;
 }
@@ -111,6 +110,7 @@ a {
   color: var(--color-white);
 }
 
+/* Medium to Large Screens */
 @media screen and (max-width: 1150px) {
   .app__navbar-links {
     display: none;
@@ -121,21 +121,36 @@ a {
   }
 }
 
+/* Small Screens */ 
 @media screen and (max-width: 650px) {
+  /* Two columned grid */
   .app__navbar {
-    padding: 1rem;
+    position: relative;
+    display: grid;
+    place-items: center;
+    grid-template-columns: auto auto;
+    margin: -22px 0px;
   }
 
-  .app__navbar-logo img {
-    width: 110px;
+  .app__navbar-change {
+    background: transparent;
   }
 
+  /* Expands first column by two sizes */
+  /* Creates a "triangle" formation: logo is on top of button and hamburger*/
+  .app__navbar-logo {
+    grid-column: 1 / span 2;
+  }
+
+  /* Positions overlay symbol closer */
   .app__navbar-smallscreen_overlay .overlay__close {
-    font-size: 27px;
-    color: var(--color-golden);
-    cursor: pointer;
-    position: absolute;
     top: 55px;
     right: 20px;
+  }
+}
+
+@keyframes shrink {
+  to {
+    transform: scale(0.7);
   }
 }
