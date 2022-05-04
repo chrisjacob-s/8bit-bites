@@ -1,13 +1,13 @@
 h4 {
-    padding: 10px 0px;
+  padding: 10px 0px;
 }
 
 .app__welcome-section {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   position: relative;
-  margin-top: -50px; /* adjusts effects from positioning Header */
+  margin: -50px 0px 100px 0px; /* adjusts effects from positioning Header */
 }
 
 .app__welcome-subheading {
@@ -16,19 +16,21 @@ h4 {
 }
 
 .app__welcome-subheading p {
-    width: 50vw;
-    line-height: 30px;
-    /* font-size: 1rem; */
+  width: 500px;
+  line-height: 30px;
 }
 
-.app__welcome-beer img{
-    width: 150px;
+.app__welcome-beer img {
+  width: 150px;
+  margin-right: 10vw;
 }
 
 .app__address {
   font-family: var(--font-alt);
   font-size: 32px;
 }
+
+/* Medium and Small Devices */
 
 @media screen and (max-width: 800px) {
   .app__welcome-section {
@@ -37,5 +39,9 @@ h4 {
 
   .app__welcome-beer img {
     margin-bottom: 100px;
+  }
+
+  .app__welcome-subheading p {
+    width: 80vw;
   }
 }
