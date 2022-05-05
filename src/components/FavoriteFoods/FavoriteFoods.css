@@ -1,0 +1,36 @@
+.app__foods-section {
+  background-color: var(--color-black);
+  padding: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app__foods-menu {
+  width: 1000px;
+}
+
+.app__foods-food img {
+  width: 100%;
+}
+
+.app__food-item {
+  font-family: var(--font-alt);
+  padding: 15px 0px;
+  color: var(--color-gray);
+  line-height: normal;
+}
+
+.app__food-item h3 {
+  color: #ceaa37;
+}
+
+@media screen and (max-width: 800px) {
+  .app__foods-section {
+    flex-direction: column;
+  }
+
+  .app__foods-menu {
+      width: 70vw;
+  }
+}

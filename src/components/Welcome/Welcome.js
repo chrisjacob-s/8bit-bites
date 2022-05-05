@@ -12,7 +12,7 @@ export default function Welcome() {
           <img src={beer} alt="8bit-beer"></img>
         </div>
         <div className="app__welcome-subheading">
-          <Subheading title="Welcome to" subtitle="8-Bit Bites" />
+          <Subheading title="Welcome to" subtitleDark="8-Bit Bites" />
           <h4 className="app__address">1984 Tapper Rd, Midway Bally</h4>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
