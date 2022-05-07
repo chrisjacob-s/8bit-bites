@@ -16,6 +16,8 @@
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
+  /* Custom cursor */
+  cursor: url('./img/8bit-sword.cur'), auto;
 }
 
 a {

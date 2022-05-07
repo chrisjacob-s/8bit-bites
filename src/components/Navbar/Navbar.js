@@ -30,21 +30,21 @@ export default function Navbar() {
           <img src={mario} alt="mario" />
         </div>
         <ul className="app__navbar-links">
-          <li className="p__vt323">
+          <li>
             <a href="#home">Home</a>
           </li>
-          <li className="p__vt323">
+          <li>
             <a href="#foods">Foods</a>
           </li>
-          <li className="p__vt323">
+          <li>
             <a href="#drinks">Drinks</a>
           </li>
-          <li className="p__vt323">
+          <li>
             <a href="#locations">Locations</a>
           </li>
         </ul>
         <div className="app__navbar-contact">
-          <a href="#contact" className="p__vt323">
+          <a href="#contact">
             <button type="button" className="custom__button">
               Contact
             </button>

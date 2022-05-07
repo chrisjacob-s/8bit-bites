@@ -41,9 +41,8 @@ a {
 }
 
 .app__navbar-links li {
+  font-family: var(--font-base);
   margin: 0 1rem;
-  cursor: pointer;
-  font-size: 25px;
 }
 
 .app__navbar-links li a {
