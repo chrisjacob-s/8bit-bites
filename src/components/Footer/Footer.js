@@ -16,13 +16,31 @@ export default function Footer() {
       <section className="app__footer-socials-section">
         <div className="app__footer-socials-follow">FOLLOW</div>
         <div className="app__footer-socials">
-          <BsGithub className="app__footer-social" fontSize={18} />
-          <BsInstagram className="app__footer-social" fontSize={18} />
-          <BsLinkedin className="app__footer-social" fontSize={18} />
+          <a
+            href="https://github.com/chrisjacob-s"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <BsGithub className="app__footer-social" fontSize={18} />
+          </a>
+          <a
+            href="https://www.instagram.com/chrisjacob_s/?hl=en"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <BsInstagram className="app__footer-social" fontSize={18} />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/chrisjacob-s/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <BsLinkedin className="app__footer-social" fontSize={18} />
+          </a>
         </div>
       </section>
       <section className="app__footer-info">
-        <p>(562) 632-1445</p>
+        <p className="app__footer-phone">(562) 632-1445</p>
         <p>INFO@GUILDHALL.TV</p>
         <p>6741 Bright Ave</p>
         <p>Whittier, California</p>
