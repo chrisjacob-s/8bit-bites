@@ -10,9 +10,21 @@ export default function Navbar() {
   const [toggleMenu, setToggleMenu] = useState(false);
   const [backgroundChange, setBackgroundChange] = useState(false);
 
+  /* Function that changes toggleMenu to true and prevents scroll*/
+  const overlayOverflowHidden = () => {
+    setToggleMenu(true);
+    document.body.style.overflow = "hidden";
+  }
+
+  /* Function that changes toggleMenu to false and enables scroll*/
+  const overlayOverflowScroll = () => {
+    setToggleMenu(false);
+    document.body.style.overflow = "scroll";
+  }
+
   const changeNavbarBackground = () => {
     if (window.scrollY >= 80) {
-      console.log("Hello")
+      /* Scrolling down will change backgroundChange to true */
       setBackgroundChange(true);
     } else {
       setBackgroundChange(false);
@@ -56,9 +68,8 @@ export default function Navbar() {
             cursor="pointer"
             color="#fff"
             fontSize={27}
-            onClick={() =>
-              setToggleMenu(true)
-            } /*clicking hamburger menu will set toggleMenu to true*/
+            onClick={overlayOverflowHidden}
+             /* clicking hamburger enable the overlay and prevent scrolling*/
           />
 
           {/* if toggleMenu is true, then show this */}
@@ -67,7 +78,8 @@ export default function Navbar() {
               <MdOutlineRestaurantMenu
                 fontSize={27}
                 className="overlay__close"
-                onClick={() => setToggleMenu(false)}
+                onClick={overlayOverflowScroll}
+                /* clicking symbol disables the overlay and enables scrolling */
               />
               <ul className="app__navbar-smallscreen-links">
                 <li className="p__pressstart2p">
