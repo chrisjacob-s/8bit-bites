@@ -4,7 +4,7 @@ a {
 
 .app__footer {
   font-family: var(--font-base);
-  font-size: small;
+  font-size: x-small;
   background-color: var(--color-black);
   width: 100%;
   display: flex;

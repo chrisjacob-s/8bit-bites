@@ -17,12 +17,16 @@
 .app__food-item {
   font-family: var(--font-alt);
   padding: 15px 0px;
-  color: var(--color-gray);
+  color: var(--color-lightgray);
   line-height: normal;
 }
 
 .app__food-item h3 {
   color: #ceaa37;
+}
+
+.app__food-item p {
+  width: 50%;
 }
 
 @media screen and (max-width: 800px) {

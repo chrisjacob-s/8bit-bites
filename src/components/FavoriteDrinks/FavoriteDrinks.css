@@ -16,7 +16,7 @@
 .app__drink-item {
   font-family: var(--font-alt);
   padding: 15px 0px;
-  color: var(--color-gray);
+  color: var(--color-darkgray);
   line-height: normal;
 }
 

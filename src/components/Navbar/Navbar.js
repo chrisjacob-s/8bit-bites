@@ -19,7 +19,7 @@ export default function Navbar() {
   /* Function that changes toggleMenu to false and enables scroll*/
   const overlayOverflowScroll = () => {
     setToggleMenu(false);
-    document.body.style.overflow = "scroll";
+    document.body.style.overflow = "auto";
   }
 
   const changeNavbarBackground = () => {
