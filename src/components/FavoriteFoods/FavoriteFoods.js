@@ -1,6 +1,6 @@
 import "./FavoriteFoods.css";
 
-import beer from "../../img/8bit-beer.gif";
+import hamburger from "../../img/8bit-hamburger.gif";
 
 import Subheading from "../Subheading/Subheading";
 
@@ -54,7 +54,7 @@ export default function FavoriteFoods() {
           </div>
         </div>
         <div className="app__foods-food">
-          <img src={beer} alt="8bit-beer"></img>
+          <img src={hamburger} alt="8bit-beer"></img>
         </div>
       </section>
     </>
