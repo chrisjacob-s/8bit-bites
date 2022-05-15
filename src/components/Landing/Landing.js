@@ -1,21 +1,26 @@
 import "./Landing.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Navbar from "../Navbar/Navbar";
-import Header from "../Header/Header";
-import Welcome from "../Welcome/Welcome";
-import FavoriteFoods from "../FavoriteFoods/FavoriteFoods";
-import FavoriteDrinks from "../FavoriteDrinks/FavoriteDrinks";
+import Home from "../Home";
+import FoodMenu from "../FoodMenu/FoodMenu";
+import DrinkMenu from "../DrinkMenu/DrinkMenu";
+import ErrorPage from "../ErrorPage";
 import Footer from "../Footer/Footer";
 
 export default function Landing() {
   return (
     <>
-      <Navbar />
-      <Header />
-      <Welcome />
-      <FavoriteFoods />
-      <FavoriteDrinks />
-      <Footer />
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/foods" element={<FoodMenu />} />
+          <Route path="/drinks" element={<DrinkMenu />} />
+          <Route path="*" element={<ErrorPage />} />
+        </Routes>
+        <Footer />
+      </Router>
     </>
   );
 }

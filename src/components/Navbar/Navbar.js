@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import "./Navbar.css";
 
 import { GiHamburgerMenu } from "react-icons/gi";
@@ -9,18 +10,31 @@ import mario from "../../img/8bit-rotating-mario.gif";
 export default function Navbar() {
   const [toggleMenu, setToggleMenu] = useState(false);
   const [backgroundChange, setBackgroundChange] = useState(false);
+  const [currentLink, setCurrentLink] = useState("");
+
+  let navbarBackground = {};
+  switch (currentLink) {
+    case "home":
+      navbarBackground = { background: "none" };
+      break;
+    case "*":
+      navbarBackground = { background: "var(--color-black" };
+      break;
+    default:
+      navbarBackground = {}
+  }
 
   /* Function that changes toggleMenu to true and prevents scroll*/
   const overlayOverflowHidden = () => {
     setToggleMenu(true);
     document.body.style.overflow = "hidden";
-  }
+  };
 
   /* Function that changes toggleMenu to false and enables scroll*/
   const overlayOverflowScroll = () => {
     setToggleMenu(false);
     document.body.style.overflow = "auto";
-  }
+  };
 
   const changeNavbarBackground = () => {
     if (window.scrollY >= 80) {
@@ -37,30 +51,43 @@ export default function Navbar() {
     <>
       {/* if backgroundChange is true then set the nav class to app__navbar and change, else just app__navbar */}
       {/* meaning app__navbar will only have black background when the window scroll exceeds 80 */}
-      <nav className={backgroundChange ? "app__navbar app__navbar-change slide-bottom" : "app__navbar"}>
-        <div className={backgroundChange ? "app__navbar-logo app__navbar-shrink-image" : "app__navbar-logo"}>
+      <nav
+        className={
+          backgroundChange
+            ? "app__navbar app__navbar-change slide-bottom"
+            : "app__navbar"
+        }
+        style={navbarBackground}
+      >
+        <div
+          className={
+            backgroundChange
+              ? "app__navbar-logo app__navbar-shrink-image"
+              : "app__navbar-logo"
+          }
+        >
           <img src={mario} alt="mario" />
         </div>
         <ul className="app__navbar-links">
           <li>
-            <a href="#home">Home</a>
+            <Link to="/" onClick={() => setCurrentLink("home")}>Home</Link>
           </li>
           <li>
-            <a href="#foods">Foods</a>
+            <Link to="/foods" onClick={() => setCurrentLink("*")}>Foods</Link>
           </li>
           <li>
-            <a href="#drinks">Drinks</a>
+            <Link to="/drinks" onClick={() => setCurrentLink("*")}>Drinks</Link>
           </li>
           <li>
-            <a href="#locations">Locations</a>
+            <Link to="/Locations" onClick={() => setCurrentLink("*")}>Locations</Link>
           </li>
         </ul>
         <div className="app__navbar-contact">
-          <a href="#contact">
+          <Link to="/contacts">
             <button type="button" className="custom__button">
               Contact
             </button>
-          </a>
+          </Link>
         </div>
 
         <div className="app__navbar-smallscreen">
@@ -69,7 +96,7 @@ export default function Navbar() {
             color="#fff"
             fontSize={27}
             onClick={overlayOverflowHidden}
-             /* clicking hamburger enable the overlay and prevent scrolling*/
+            /* clicking hamburger enable the overlay and prevent scrolling*/
           />
 
           {/* if toggleMenu is true, then show this */}
@@ -83,16 +110,16 @@ export default function Navbar() {
               />
               <ul className="app__navbar-smallscreen-links">
                 <li className="p__pressstart2p">
-                  <a href="#home">Home</a>
+                  <Link to="/">Home</Link>
                 </li>
                 <li className="p__pressstart2p">
-                  <a href="#foods">Foods</a>
+                  <Link to="/foods">Foods</Link>
                 </li>
                 <li className="p__pressstart2p">
-                  <a href="#drinks">Drinks</a>
+                  <Link to="/drinks">Drinks</Link>
                 </li>
                 <li className="p__pressstart2p">
-                  <a href="#locations">Locations</a>
+                  <Link to="/locations">Locations</Link>
                 </li>
               </ul>
             </div>
