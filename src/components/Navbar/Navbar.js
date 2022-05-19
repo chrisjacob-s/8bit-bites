@@ -21,7 +21,7 @@ export default function Navbar() {
       navbarBackground = { background: "var(--color-black" };
       break;
     default:
-      navbarBackground = {}
+      navbarBackground = {};
   }
 
   /* Function that changes toggleMenu to true and prevents scroll*/
@@ -70,16 +70,24 @@ export default function Navbar() {
         </div>
         <ul className="app__navbar-links">
           <li>
-            <Link to="/" onClick={() => setCurrentLink("home")}>Home</Link>
+            <Link to="/" onClick={() => setCurrentLink("home")}>
+              Home
+            </Link>
           </li>
           <li>
-            <Link to="/foods" onClick={() => setCurrentLink("*")}>Foods</Link>
+            <Link to="/foods" onClick={() => setCurrentLink("*")}>
+              Foods
+            </Link>
           </li>
           <li>
-            <Link to="/drinks" onClick={() => setCurrentLink("*")}>Drinks</Link>
+            <Link to="/drinks" onClick={() => setCurrentLink("*")}>
+              Drinks
+            </Link>
           </li>
           <li>
-            <Link to="/Locations" onClick={() => setCurrentLink("*")}>Locations</Link>
+            <Link to="/Locations" onClick={() => setCurrentLink("*")}>
+              Locations
+            </Link>
           </li>
         </ul>
         <div className="app__navbar-contact">
@@ -110,16 +118,24 @@ export default function Navbar() {
               />
               <ul className="app__navbar-smallscreen-links">
                 <li className="p__pressstart2p">
-                  <Link to="/">Home</Link>
+                  <Link to="/" onClick={() => setCurrentLink("home")}>
+                    Home
+                  </Link>
                 </li>
                 <li className="p__pressstart2p">
-                  <Link to="/foods">Foods</Link>
+                  <Link to="/foods" onClick={() => setCurrentLink("*")}>
+                    Foods
+                  </Link>
                 </li>
                 <li className="p__pressstart2p">
-                  <Link to="/drinks">Drinks</Link>
+                  <Link to="/drinks" onClick={() => setCurrentLink("*")}>
+                    Drinks
+                  </Link>
                 </li>
                 <li className="p__pressstart2p">
-                  <Link to="/locations">Locations</Link>
+                  <Link to="/locations" onClick={() => setCurrentLink("*")}>
+                    Locations
+                  </Link>
                 </li>
               </ul>
             </div>
