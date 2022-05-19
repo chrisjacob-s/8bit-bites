@@ -15,7 +15,7 @@ export default function Navbar() {
   let navbarBackground = {};
   switch (currentLink) {
     case "home":
-      navbarBackground = { background: "none" };
+      navbarBackground = { backgroundColor: "none" };
       break;
     case "*":
       navbarBackground = { background: "var(--color-black" };
