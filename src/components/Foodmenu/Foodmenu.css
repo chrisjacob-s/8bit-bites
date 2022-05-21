@@ -1,0 +1,60 @@
+.app__menu-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.app__menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+}
+
+.app__food-image img{
+  width: 200px;
+}
+
+.app__menu-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.app__menu-items {
+  font-family: var(--font-alt);
+}
+
+.app__menu-item p {
+  width: 500px;
+}
+
+@media screen and (max-width: 1150px) {
+  .app__menu-item p {
+    width: 350px;
+  }
+
+  .app__food-image img{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .app__menu {
+    flex-direction: column;
+  }
+
+  .app__menu-item p {
+    width: 100%;
+  }
+
+  .image-left {
+    display: none;
+  }
+
+  .second-image {
+    display: none;
+  }
+}

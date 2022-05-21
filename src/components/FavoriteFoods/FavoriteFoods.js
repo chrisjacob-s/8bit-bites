@@ -12,14 +12,14 @@ export default function FavoriteFoods() {
           <Subheading title="Favorite Foods" subtitleLight="From the Kitchen" />
           <div className="app__food-items">
             <div className="app__food-item">
-              <div className="app__food-item">
-                <h3>8-Bit Bites Bites</h3>
-                <p>
-                  Three 8 oz brisket burger sliders stuffed with smoked cheddar,
-                  topped with caramelized onions, pickles, special sauce,
-                  brioche bun
-                </p>
-              </div>
+              <h3>8-Bit Bites Bites</h3>
+              <p>
+                Three 8 oz brisket burger sliders stuffed with smoked cheddar,
+                topped with caramelized onions, pickles, special sauce, brioche
+                bun
+              </p>
+            </div>
+            <div className="app__food-item">
               <h3>Pac-Man Pac-Chips</h3>
               <p>Add chilled habanero or pimento cheese dip</p>
               <p>Add buffalo or ranch seasoning dust</p>
