@@ -85,13 +85,13 @@ export default function Navbar() {
             </Link>
           </li>
           <li>
-            <Link to="/Locations" onClick={() => setCurrentLink("*")}>
+            <Link to="/locations" onClick={() => setCurrentLink("*")}>
               Locations
             </Link>
           </li>
         </ul>
         <div className="app__navbar-contact">
-          <Link to="/contacts">
+          <Link to="/contact">
             <button type="button" className="custom__button">
               Contact
             </button>

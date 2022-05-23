@@ -1,0 +1,55 @@
+.leaflet-container {
+  width: 49.4vw;
+  height: 500px;
+  z-index: 0;
+}
+
+.app__location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app__description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50vw;
+  font-family: var(--font-alt);
+  font-size: 1.3em;
+}
+
+.app__description h2 {
+  font: 1.2em var(--font-base);
+  color: var(--color-golden);
+  padding-bottom: 10px;
+}
+
+@media screen and (max-width: 1150px) {
+  .leaflet-container,
+  .app__description {
+    width: 500px;
+  }
+
+  .app__description a {
+      padding-bottom: 20px;
+  }
+
+  .app__location {
+    flex-direction: column;
+    padding: 50px 0px;
+  }
+
+  .burbank-location {
+    flex-direction: column-reverse;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+    .leaflet-container,
+    .app__description {
+        width: 90vw;
+        height: 300px;
+    }
+}
