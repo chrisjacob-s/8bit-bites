@@ -12,6 +12,11 @@
   gap: 10%;
 }
 
+/* .image-left, .image-right {
+  height: 100vh;
+  background: url("../../img/8bit-hamburger.gif") 5%/50%
+} */
+
 .app__food-image img{
   width: 200px;
 }

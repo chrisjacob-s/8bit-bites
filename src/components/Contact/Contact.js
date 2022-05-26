@@ -1,5 +1,7 @@
 import "./Contact.css";
 
+import ContactForm from "../ContactForm/ContactForm";
+
 export default function Contact() {
-  return <h1>Contact</h1>;
+  return <ContactForm />;
 }

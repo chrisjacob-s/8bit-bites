@@ -58,8 +58,8 @@ a {
   height: 4px;
   border-radius: 4px;
   background-color: var(--color-golden);
-  bottom: 0;
-  left: 0;
+  top: 18px;
+  left: -1px;
   transform-origin: right;
   transform: scaleX(0);
   transition: transform .3s ease-in-out;
