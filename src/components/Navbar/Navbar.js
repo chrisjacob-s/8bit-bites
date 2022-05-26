@@ -118,22 +118,50 @@ export default function Navbar() {
               />
               <ul className="app__navbar-smallscreen-links">
                 <li className="p__pressstart2p">
-                  <Link to="/" onClick={() => setCurrentLink("home")}>
+                  <Link
+                    to="/"
+                    onClick={() => {
+                      setCurrentLink("home");
+                      setToggleMenu(false);
+                      document.body.style.overflow = "auto";
+                    }}
+                  >
                     Home
                   </Link>
                 </li>
                 <li className="p__pressstart2p">
-                  <Link to="/foods" onClick={() => setCurrentLink("*")}>
+                  <Link
+                    to="/foods"
+                    onClick={() => {
+                      setCurrentLink("*");
+                      setToggleMenu(false);
+                      document.body.style.overflow = "auto";
+                    }}
+                  >
                     Foods
                   </Link>
                 </li>
                 <li className="p__pressstart2p">
-                  <Link to="/drinks" onClick={() => setCurrentLink("*")}>
+                  <Link
+                    to="/drinks"
+                    onClick={() => {
+                      setCurrentLink("*");
+                      setToggleMenu(false);
+                      document.body.style.overflow = "auto";
+                    }}
+                  >
                     Drinks
                   </Link>
                 </li>
                 <li className="p__pressstart2p">
-                  <Link to="/locations" onClick={() => setCurrentLink("*")}>
+                  <Link
+                    to="/locations"
+                    onClick={() => {
+                      setCurrentLink("*");
+                      setToggleMenu(false);
+                      document.body.style.overflow = "auto";
+                    }}
+                  >
                     Locations
                   </Link>
                 </li>
