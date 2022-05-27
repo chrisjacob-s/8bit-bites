@@ -1,0 +1,37 @@
+.app__form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  width: 100%;
+  font-family: var(--font-alt);
+}
+
+.app__contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.app__contact-form .app__form-label {
+  padding: 10px 0px 5px 0px;
+}
+
+.app__form-label label {
+    font-size: 20px;
+}
+
+.app__form-input input,
+.app__form-input textarea,
+.app__form-button button {
+  width: 300px;
+}
+
+.app__form-input textarea {
+  height: 100px;
+}
+
+.app__form-button {
+  padding: 10px 0px;
+}

@@ -1,33 +1,50 @@
-import React from "react";
+import "./ContactForm.css";
 
 export default function ContactForm() {
   return (
-    <div className="container">
-      <form>
-        <label for="fname">First Name</label>
-        <input
-          type="text"
-          id="fname"
-          name="firstname"
-          placeholder="Your name.."
-        />
-
-        <label for="lname">Last Name</label>
-        <input
-          type="text"
-          id="lname"
-          name="lastname"
-          placeholder="Your last name.."
-        />
-
-        <label for="message">Message</label>
-        <textarea
-          id="message"
-          name="message"
-          placeholder="Write something.."
-        ></textarea>
-
-        <input type="submit" value="Submit" />
+    <div className="app__form-container">
+      <form className="app__contact-form">
+        <div className="app__form-name">
+          <div className="app__form-label">
+            <label>Name</label>
+          </div>
+          <div className="app__form-input">
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your name.."
+            />
+          </div>
+        </div>
+        <div className="app__form-email">
+          <div className="app__form-label">
+            <label>Email</label>
+          </div>
+          <div className="app__form-input">
+            <input
+              type="text"
+              id="email"
+              name="email"
+              placeholder="Your email.."
+            />
+          </div>
+        </div>
+        <div className="app__form-message">
+          <div className="app__form-label">
+            <label>Message</label>
+          </div>
+          <div className="app__form-input">
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Write something.."
+            ></textarea>
+          </div>
+        </div>
+        <div className="app__form-button">
+          <button className="custom__button">Send Message</button>
+        </div>
       </form>
     </div>
   );

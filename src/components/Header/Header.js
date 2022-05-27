@@ -7,7 +7,7 @@ export default function Header() {
     <>
       <header>
         <div className="app__header-logo">
-          <img src={logo} alt="8bit-mario"></img>
+          <img src={logo} alt="8bit-logo"></img>
         </div>
       </header>
     </>

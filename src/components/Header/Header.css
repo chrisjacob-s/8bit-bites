@@ -4,8 +4,7 @@ header {
     background-size: cover;
     height: 100vh;
     position: relative;
-    top: -182px; 
-    /* moves header background to top of page*/
+    top: -182px; /* moves header background to top of page*/
 }
 
 .app__header-logo {

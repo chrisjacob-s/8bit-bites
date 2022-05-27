@@ -1,0 +1,37 @@
+.app__contact-us-section {
+  background: no-repeat url("../../img/8bit-contact-background.gif");
+  background-size: cover;
+  height: 100%;
+}
+
+.app__contact-us {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-white);
+  text-align: center;
+  padding: 50px 0px;
+  font-family: var(--font-alt);
+}
+
+.app__contact-us-card {
+  background: rgba(0, 0, 0, 0.68);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.1px);
+  -webkit-backdrop-filter: blur(4.1px);
+  padding: 25px;
+}
+
+.app__contact-us-title {
+  font-family: var(--font-base);
+}
+
+.app__contact-us-title h1 {
+    font-size: 4em;
+}
+
+.app__contact-us-info {
+    padding: 0px 0px 45px 0px;
+}
