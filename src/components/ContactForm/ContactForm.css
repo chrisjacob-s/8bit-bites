@@ -2,9 +2,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 500px;
   width: 100%;
   font-family: var(--font-alt);
+  gap: 10%;
+  padding: 50px 0px;
 }
 
 .app__contact-form {
@@ -26,6 +27,7 @@
 .app__form-input textarea,
 .app__form-button button {
   width: 300px;
+  padding: 10px;
 }
 
 .app__form-input textarea {
@@ -34,4 +36,28 @@
 
 .app__form-button {
   padding: 10px 0px;
+}
+
+.form-image img {
+    width: 300px;
+}
+
+@media screen and (max-width: 1150px) {
+    .form-image img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .app__form-container {
+        flex-direction: column;
+    }
+
+    .app__form-left {
+        display: none;
+    }
+
+    .app__form-right {
+        padding: 30px 0px 0px 0px;
+    }
 }

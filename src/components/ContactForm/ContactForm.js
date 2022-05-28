@@ -1,8 +1,14 @@
 import "./ContactForm.css";
 
+import sonic from "../../img/8bit-sonic.gif";
+import kirby from "../../img/8bit-kirby.gif";
+
 export default function ContactForm() {
   return (
     <div className="app__form-container">
+      <div className="app__form-left form-image">
+        <img src={sonic} alt="8bit-sonic" />
+      </div>
       <form className="app__contact-form">
         <div className="app__form-name">
           <div className="app__form-label">
@@ -46,6 +52,9 @@ export default function ContactForm() {
           <button className="custom__button">Send Message</button>
         </div>
       </form>
+      <div className="app__form-right form-image">
+        <img src={kirby} alt="8bit-kirby" />
+      </div>
     </div>
   );
 }

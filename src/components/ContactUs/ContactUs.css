@@ -35,3 +35,9 @@
 .app__contact-us-info {
     padding: 0px 0px 45px 0px;
 }
+
+@media screen and (max-width: 650px) {
+    .app__contact-us-title h1 {
+        font-size: 3em;
+    }
+}
