@@ -2,10 +2,12 @@ import "./DrinkMenu.css";
 
 import wine from "../../img/8bit-wine.gif";
 import Subheading from "../Subheading/Subheading";
+import NavbarAlt from "../NavbarAlt/NavbarAlt";
 
 export default function DrinkMenu() {
   return (
     <>
+      <NavbarAlt />
       <section className="app__menu-section">
         <div className="app__menu">
           <div className="app__drink-image image-left">

@@ -1,11 +1,14 @@
 import "./FoodMenu.css";
 
+
 import hamburger from "../../img/8bit-hamburger.gif";
 import Subheading from "../Subheading/Subheading";
+import NavbarAlt from "../NavbarAlt/NavbarAlt";
 
 export default function FoodMenu() {
   return (
     <>
+      <NavbarAlt />
       <section className="app__menu-section">
         <div className="app__menu">
           <div className="app__food-image image-left">

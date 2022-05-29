@@ -15,10 +15,20 @@ a {
   padding: 100px 0px;
 }
 
+.app__footer-links-section {
+  display: flex;
+}
+
 .app__footer-links {
+  position: relative;
+  left: -15px;
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+
+.app__footer-links li {
+  list-style-type:  none;
 }
 
 .app__footer-links a:hover {

@@ -1,4 +1,4 @@
-import "./Navbar.css";
+import "./NavbarAlt.css";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
@@ -7,7 +7,7 @@ import { MdOutlineRestaurantMenu } from "react-icons/md";
 
 import mario from "../../img/8bit-rotating-mario.gif";
 
-export default function Navbar() {
+export default function NavbarAlt() {
   const [toggleMenu, setToggleMenu] = useState(false);
   const [backgroundChange, setBackgroundChange] = useState(false);
   const [currentLink, setCurrentLink] = useState("");
@@ -55,7 +55,7 @@ export default function Navbar() {
         className={
           backgroundChange
             ? "app__navbar app__navbar-change slide-bottom"
-            : "app__navbar"
+            : "app__navbar app__navbar-black"
         }
         style={navbarBackground}
       >

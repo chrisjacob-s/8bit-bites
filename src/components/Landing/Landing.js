@@ -1,7 +1,6 @@
 import "./Landing.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import Navbar from "../Navbar/Navbar";
 import Home from "../Home";
 import FoodMenu from "../FoodMenu/FoodMenu";
 import DrinkMenu from "../DrinkMenu/DrinkMenu";
@@ -14,7 +13,6 @@ export default function Landing() {
   return (
     <>
       <Router>
-        <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/foods" element={<FoodMenu />} />

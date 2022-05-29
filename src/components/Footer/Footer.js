@@ -1,4 +1,5 @@
 import "./Footer.css";
+import { Link } from "react-router-dom";
 
 import { BsGithub, BsInstagram, BsLinkedin } from "react-icons/bs";
 
@@ -6,12 +7,28 @@ export default function Footer() {
   return (
     <footer className="app__footer">
       <section className="app__footer-links-section">
-        <div className="app__footer-links">
-          <a href="#home">HOME</a>
-          <a href="#foods">FOOD MENU</a>
-          <a href="#drinks">DRINK MENU</a>
-          <a href="#contact">CONTACT</a>
-        </div>
+          <ul className="app__footer-links">
+            <li>
+              <Link to="/">
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link to="/foods">
+                Foods
+              </Link>
+            </li>
+            <li>
+              <Link to="/drinks">
+                Drinks
+              </Link>
+            </li>
+            <li>
+              <Link to="/locations">
+                Locations
+              </Link>
+            </li>
+          </ul>
       </section>
       <section className="app__footer-socials-section">
         <div className="app__footer-socials-follow">FOLLOW</div>
@@ -41,7 +58,7 @@ export default function Footer() {
       </section>
       <section className="app__footer-info">
         <p className="app__footer-phone">(562) 632-1445</p>
-        <p>INFO@GUILDHALL.TV</p>
+        <p>INFO@8BITBITES.TV</p>
         <p>6741 Bright Ave</p>
         <p>Whittier, California</p>
       </section>
