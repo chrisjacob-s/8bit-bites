@@ -21,7 +21,7 @@ a {
 
 .app__footer-links {
   position: relative;
-  left: -15px;
+  left: -15px; /* Positions links more toward center */
   display: flex;
   flex-direction: column;
   gap: 20px;

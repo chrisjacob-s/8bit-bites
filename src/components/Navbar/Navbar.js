@@ -1,5 +1,5 @@
 import "./Navbar.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 import { GiHamburgerMenu } from "react-icons/gi";
@@ -11,6 +11,11 @@ export default function Navbar() {
   const [toggleMenu, setToggleMenu] = useState(false);
   const [backgroundChange, setBackgroundChange] = useState(false);
   const [currentLink, setCurrentLink] = useState("");
+
+  /* After page renders, scroll to the top of page */
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   let navbarBackground = {};
   switch (currentLink) {
