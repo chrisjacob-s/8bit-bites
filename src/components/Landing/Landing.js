@@ -7,7 +7,7 @@ import DrinkMenu from "../DrinkMenu/DrinkMenu";
 import LocationsPage from "../LocationsPage/LocationsPage";
 import Contact from "../Contact/Contact";
 import Footer from "../Footer/Footer";
-import ErrorPage from "../ErrorPage";
+import ErrorPage from "../ErrorPage/ErrorPage";
 
 export default function Landing() {
   return (
