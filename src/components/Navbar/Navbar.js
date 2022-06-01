@@ -127,7 +127,7 @@ export default function Navbar() {
                     to="/"
                     onClick={() => {
                       setCurrentLink("home");
-                      setToggleMenu(false);
+                      setToggleMenu(false); /* Clicking link will close overlay */
                       document.body.style.overflow = "auto";
                     }}
                   >
@@ -139,7 +139,7 @@ export default function Navbar() {
                     to="/foods"
                     onClick={() => {
                       setCurrentLink("*");
-                      setToggleMenu(false);
+                      setToggleMenu(false); /* Clicking link will close overlay */
                       document.body.style.overflow = "auto";
                     }}
                   >
@@ -151,7 +151,7 @@ export default function Navbar() {
                     to="/drinks"
                     onClick={() => {
                       setCurrentLink("*");
-                      setToggleMenu(false);
+                      setToggleMenu(false); /* Clicking link will close overlay */
                       document.body.style.overflow = "auto";
                     }}
                   >
@@ -163,7 +163,7 @@ export default function Navbar() {
                     to="/locations"
                     onClick={() => {
                       setCurrentLink("*");
-                      setToggleMenu(false);
+                      setToggleMenu(false); /* Clicking link will close overlay */
                       document.body.style.overflow = "auto";
                     }}
                   >
