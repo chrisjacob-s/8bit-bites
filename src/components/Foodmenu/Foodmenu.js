@@ -1,6 +1,6 @@
 import "./FoodMenu.css";
 
-import hamburger from "../../img/8bit-hamburger.gif"
+import fried from "../../img/8bit-fried-chicken.gif"
 import chicken from "../../img/8bit-link-chicken.gif";
 import Subheading from "../Subheading/Subheading";
 import NavbarAlt from "../NavbarAlt/NavbarAlt";
@@ -12,7 +12,7 @@ export default function FoodMenu() {
       <section className="app__menu-section">
         <div className="app__menu">
           <div className="app__food-image image-left">
-            <img src={chicken} alt="8bit-hamburger" />
+            <img src={chicken} alt="8bit-link-chicken" />
           </div>
           <div className="app__menu-center">
             <Subheading title="Tasty" subtitleDark="From the Kitchen" />
@@ -100,7 +100,7 @@ export default function FoodMenu() {
             </div>
           </div>
           <div className="app__food-image image-right">
-            <img src={hamburger} alt="8bit-hamburger" />
+            <img src={fried} alt="8bit-fried-chicken" />
           </div>
         </div>
       </section>
