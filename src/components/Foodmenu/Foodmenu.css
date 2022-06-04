@@ -21,6 +21,10 @@
   width: 100%;
 }
 
+.image-left {
+  padding: 30px
+}
+
 .app__menu-center {
   display: flex;
   flex-direction: column;

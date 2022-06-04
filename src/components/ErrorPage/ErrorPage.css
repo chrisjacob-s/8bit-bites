@@ -1,3 +1,25 @@
 .app__error-page {
-    height: 50vh;
+    height: 65vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-base);
+}
+
+.app__error-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.app__error-image img {
+    width: 100%;
+}
+
+@media screen and (max-width: 1150px) {
+    .app__error-section h1,
+    .app__error-section h2 {
+        font-size: 100%;
+    }
 }
